@@ -25,7 +25,7 @@
             class="navbar navbar-expand-sm navbar-dark bg-dark"
            >
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="{{ url('/logout') }}">Logout</a>
                 <button
                     class="navbar-toggler d-lg-none"
                     type="button"
@@ -71,6 +71,7 @@
                             Search
                         </button>
                     </form>
+                    <h6></h6>
                 </div>
             </div>
            </nav>

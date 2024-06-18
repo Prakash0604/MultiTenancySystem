@@ -84,7 +84,7 @@ class StudentController extends Controller
         $filepath=$student->image;
         if($request->hasFile('image')){
             if($filepath){
-                Storage::delete($filepath);
+                Storage::delete('public/images/',$filepath);
             }
             $newimage=$request->file('image');
             $filepath=time().'.'.$newimage->getclientOriginalName();

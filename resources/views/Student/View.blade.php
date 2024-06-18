@@ -42,7 +42,8 @@
                             <td>
                                 @if ($student->image!="")
 
-                                <img src="{{ asset('storage/images/'.$student->image) }}" alt="" width="100px" height="100px" class="rounded-circle">
+                                <img src="{{ asset('storage/'.$student->image) }}" alt="" width="100px" height="100px" class="rounded-circle">
+
                                 @else
                                 <img src="{{ asset('defaultimage.png') }}" alt="" width="100px" height="100px">
                                 @endif
